@@ -1,50 +1,144 @@
 <!DOCTYPE html>
-<html lang="my">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>eMMC UFS Finder</title>
-    <style>
-        /* ဒီဇိုင်းပိုင်း */
-        body { 
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
-            background: linear-gradient(135deg, #2c3e50, #000000); 
-            display: flex; 
-            justify-content: center; 
-            align-items: center; 
-            height: 100vh; 
-            margin: 0; 
-            color: white;
-        }
-        .container { 
-            background: rgba(255, 255, 255, 0.1); 
-            padding: 50px; 
-            border-radius: 25px; 
-            text-align: center; 
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-        }
-        h1 { margin-bottom: 20px; font-size: 32px; }
-        p { margin-bottom: 30px; color: #ccc; }
-        .btn { 
-            display: inline-block; 
-            padding: 20px 40px; 
-            background: #ff4757; 
-            color: white; 
-            text-decoration: none; 
-            border-radius: 50px; 
-            font-size: 18px; 
-            font-weight: bold;
-            transition: 0.3s;
-        }
-        .btn:hover { background: #ff6b81; transform: scale(1.05); }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>EMMC LIST - APK Download</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+background:linear-gradient(135deg,#0f172a,#2563eb,#06b6d4);
+background-size:300% 300%;
+animation:bgMove 10s infinite;
+}
+
+@keyframes bgMove{
+0%{background-position:0% 50%;}
+50%{background-position:100% 50%;}
+100%{background-position:0% 50%;}
+}
+
+.card{
+width:360px;
+background:rgba(255,255,255,.12);
+backdrop-filter:blur(15px);
+padding:30px;
+border-radius:25px;
+text-align:center;
+color:#fff;
+box-shadow:0 10px 30px rgba(0,0,0,.4);
+}
+
+.icon{
+font-size:70px;
+margin-bottom:15px;
+animation:float 3s ease-in-out infinite;
+}
+
+@keyframes float{
+50%{transform:translateY(-10px);}
+}
+
+h1{
+font-size:32px;
+margin-bottom:8px;
+}
+
+.version{
+color:#ddd;
+margin-bottom:20px;
+}
+
+.download{
+display:inline-block;
+padding:15px 35px;
+background:#22c55e;
+color:white;
+text-decoration:none;
+border-radius:50px;
+font-size:18px;
+font-weight:bold;
+transition:.3s;
+}
+
+.download:hover{
+background:#16a34a;
+transform:scale(1.05);
+}
+
+.features{
+margin-top:25px;
+text-align:left;
+}
+
+.features p{
+padding:8px 0;
+}
+
+.footer{
+margin-top:25px;
+font-size:13px;
+color:#ddd;
+}
+
+</style>
+
 </head>
+
 <body>
-    <div class="container">
-        <h1>eMMC UFS Finder</h1>
-        <p>Application ကို အောက်ပါခလုတ်မှတဆင့် ရယူနိုင်ပါသည်။</p>
-        <a href="https://drive.google.com/file/d/17HvDWDlKOWRT2vGWD-TG16VlC7LNVfcE/view?usp=sharing" class="btn">Download Now</a>
-    </div>
+
+<div class="card">
+
+<div class="icon">📱</div>
+
+<h1>EMMC LIST</h1>
+
+<p class="version">
+Latest Version
+</p>
+
+<a class="download"
+href="https://drive.google.com/uc?export=download&id=17HvDWDlKOWRT2vGWD-TG16VlC7LNVfcE">
+⬇ Download APK
+</a>
+
+<div class="features">
+
+<p>✅ Fast Search</p>
+
+<p>✅ Latest Database</p>
+
+<p>✅ Easy To Use</p>
+
+<p>✅ Secure Download</p>
+
+</div>
+
+<div class="footer">
+
+⭐⭐⭐⭐⭐
+
+<br><br>
+
+Copyright © 2026 EMMC LIST
+
+</div>
+
+</div>
+
 </body>
+
 </html>
